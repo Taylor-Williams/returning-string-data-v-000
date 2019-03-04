@@ -1559,3 +1559,14 @@ Cannot render console from 73.109.23.230! Allowed networks: 127.0.0.1, ::1, 127.
 Processing by Rails::WelcomeController#index as HTML
   Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (1.9ms)
 Completed 200 OK in 19ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 73.109.23.230 at 2019-03-04 16:14:16 +0000
+Cannot render console from 73.109.23.230! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (0.5ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 426ms (Views: 421.5ms | ActiveRecord: 0.5ms)
